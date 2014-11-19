@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class Rnsitgscpallindrome {
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner a = new Scanner(System.in);
+String s;
+String b = new String("GSCRnsit");
+
+do{
+
+System.out.println("Enter a string");
+s = a.nextLine();
+ 
+
+String reverse = new StringBuffer(s).reverse().toString();
+if(String.valueOf(s).compareTo(String.valueOf(reverse))==0)
+System.out.println("The inputted string is a palindrome " );
+else
+System.out.println("The inputted string is not an palindrome");
+}while(String.valueOf(s).compareTo(String.valueOf(b))!=0);
+System.out.println("You have entered GSCRnsit as input,so the execution ends .Thank you. ");
+
+}
+
+	}
+	
